@@ -54,7 +54,7 @@ var MyScroll = "";
     preloader: function () {
       setTimeout(function () {
         $("#preloader").fadeOut("slow");
-      }, 2400);
+      }, 800);
     },
 
     w: function (e) {
@@ -105,12 +105,12 @@ var MyScroll = "";
         );
         dropdownAnchor.each(function () {
           let self = $(this);
-          let toggleBtn = document.createElement("BUTTON");
-          toggleBtn.setAttribute("aria-label", "dropdown toggler");
-          toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
-          self.append(function () {
-            return toggleBtn;
-          });
+          // let toggleBtn = document.createElement("BUTTON");
+          // toggleBtn.setAttribute("aria-label", "dropdown toggler");
+          // toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+          // self.append(function () {
+          //   return toggleBtn;
+          // });
           self.find("button").on("click", function (e) {
             e.preventDefault();
             let self = $(this);
